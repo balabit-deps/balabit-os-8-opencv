@@ -1,3 +1,9 @@
+opencv (4.2.0+dfsg-5bb1) unstable; urgency=medium
+
+  * Fixed Balabit stylish version
+
+  -- Imre Steiner <imre.steiner@oneidentity.com>  Wed, 17 Feb 2021 15:54:21 +0000
+
 opencv (4.2.0+dfsg-5-bb1) unstable; urgency=medium
 
   * Some build optimizations
