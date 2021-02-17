@@ -17,10 +17,8 @@ Build-Depends:
  ninja-build,
  libavcodec-dev,
  libavformat-dev,
- libavresample-dev,
  libdc1394-22-dev [linux-any],
  libeigen3-dev,
- libgdal-dev,
  libgdcm-dev [!hppa !m68k !powerpcspe !sh4 !sparc64 !x32],
  libgl1-mesa-dev,
  libglu1-mesa-dev,
@@ -40,7 +38,6 @@ Build-Depends:
  libtesseract-dev,
  libtiff-dev,
  libv4l-dev [linux-any],
- libvtk6-dev,
  libvtkgdcm-dev [!alpha !ppc64 !x32],
  libgdcm-tools,
  libgstreamer1.0-dev,
@@ -105,7 +102,6 @@ Depends:
  libopencv-video-dev (= ${binary:Version}),
  libopencv-videoio-dev (= ${binary:Version}),
  libopencv-videostab-dev (= ${binary:Version}),
- libopencv-viz-dev (= ${binary:Version}),
  libopencv4.2-java (= ${source:Version}),
  pkg-config,
  ${misc:Depends},
@@ -996,54 +992,6 @@ Description: computer vision Super Resolution library
  analysis, structural analysis, motion analysis and object tracking, object
  recognition, camera calibration and 3D reconstruction.
 
-Package: libopencv-viz-dev
-Section: libdevel
-Architecture: any
-Multi-Arch: same
-Depends:
- libopencv-core-dev (= ${binary:Version}),
- libopencv-viz4.2 (= ${binary:Version}),
- ${misc:Depends},
-Description: development files for libopencv-viz4.2
- This package contains the header files and static library needed to compile
- applications that use OpenCV (Open Computer Vision) 3D data visualization
- library.
- .
- The Open Computer Vision Library is a collection of algorithms and sample
- code for various computer vision problems. The library is compatible with
- IPL (Intel's Image Processing Library) and, if available, can use IPP
- (Intel's Integrated Performance Primitives) for better performance.
- .
- OpenCV provides low level portable data types and operators, and a set
- of high level functionalities for video acquisition, image processing and
- analysis, structural analysis, motion analysis and object tracking, object
- recognition, camera calibration and 3D reconstruction.
-
-Package: libopencv-viz4.2
-Section: libs
-Architecture: any
-Multi-Arch: same
-Pre-Depends:
- ${misc:Pre-Depends},
-Depends:
- libopencv-core4.2 (= ${binary:Version}),
- libvtk6.3,
- ${misc:Depends},
- ${shlibs:Depends},
-Description: computer vision 3D data visualization library
- This package contains the OpenCV (Open Computer Vision) 3D data visualization
- runtime libraries.
- .
- The Open Computer Vision Library is a collection of algorithms and sample
- code for various computer vision problems. The library is compatible with
- IPL (Intel's Image Processing Library) and, if available, can use IPP
- (Intel's Integrated Performance Primitives) for better performance.
- .
- OpenCV provides low level portable data types and operators, and a set
- of high level functionalities for video acquisition, image processing and
- analysis, structural analysis, motion analysis and object tracking, object
- recognition, camera calibration and 3D reconstruction.
-
 #Package: libopencv-gapi-dev
 #Section: libdevel
 #Architecture: any
@@ -1113,7 +1061,6 @@ Depends:
  libopencv-video-dev (= ${binary:Version}),
  libopencv-videoio-dev (= ${binary:Version}),
  libopencv-videostab-dev (= ${binary:Version}),
- libopencv-viz-dev (= ${binary:Version}),
  ${misc:Depends},
 Description: development files for libopencv-contrib4.2
  This package contains the header files and static library needed to compile
@@ -1153,7 +1100,6 @@ Depends:
  libopencv-video4.2 (= ${binary:Version}),
  libopencv-videoio4.2 (= ${binary:Version}),
  libopencv-videostab4.2 (= ${binary:Version}),
- libopencv-viz4.2 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
 Description: computer vision contrlib library
@@ -1277,7 +1223,6 @@ Depends:
  libopencv-video4.2 (= ${binary:Version}),
  libopencv-videoio4.2 (= ${binary:Version}),
  libopencv-videostab4.2 (= ${binary:Version}),
- libopencv-viz4.2 (= ${binary:Version}),
  ${misc:Depends},
  ${python3:Depends},
  ${shlibs:Depends},
