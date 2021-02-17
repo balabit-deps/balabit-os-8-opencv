@@ -1,3 +1,9 @@
+opencv (4.2.0+dfsg-5-bb1) unstable; urgency=medium
+
+  * Some build optimizations
+
+  -- Imre Steiner <imre.steiner@oneidentity.com>  Wed, 17 Feb 2021 12:56:37 +0000
+
 opencv (4.2.0+dfsg-5) unstable; urgency=medium
 
   [ Mo Zhou ]
